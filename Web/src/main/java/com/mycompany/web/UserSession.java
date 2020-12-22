@@ -12,7 +12,35 @@ package com.mycompany.web;
 public class UserSession 
 {
     private String username;
-    private String password;
+    private String remarks;
+    
+    public UserSession() 
+    {
+        this.username = "";
+        this.remarks = "";
+    }
+    
+    public UserSession(String username, String remarks)
+    {
+        this.username = username;
+        this.remarks = remarks;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
     
     
 }
